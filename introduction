@@ -1,0 +1,9 @@
+import urllib.request
+from urllib.request import urlopen
+#准备网址
+url = "http://www.baidu.com"
+#打开网址得到响应
+resp = urlopen(url)
+#希望通过响应得到网页上最终显示的内容:从响应中读取内容
+resp.read()
+print(resp.read())
